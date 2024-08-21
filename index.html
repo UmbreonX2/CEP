@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> -->
+  <title>CEP</title>
+</head>
+<body>
+  <div class="container">
+      <h1 class="title">Cadastro de Endereço</h1>
+      <form id="address-form">
+        <div class="input-group">
+          <div class="input-nomeEmail">
+            <div class="input-box nome">
+              <label for="nome" class="title-label">Nome</label>
+              <input type="text" id="nome" class="input" required>
+            </div>
+    
+            <div class="input-box email">
+              <label for="email" class="title-label">E-mail</label>
+              <input type="text" id="email" class="input" required>
+            </div>
+          </div>
+        </div>
+
+        <div class="input-endereco">  
+          <div class="input-box">
+              <label for="cep" class="title-label">CEP</label>
+              <input type="text" id="cep" class="input" placeholder="Digite o CEP" required>
+          </div>
+          <div class="input-box">
+            <label for="endereco" class="title-label">Endereço</label>
+            <input type="text" id="endereco" class="input" required>
+          </div>
+          <div class="input-box">
+            <label for="numero" class="title-label">Número</label>
+            <input type="text" id="numero" class="input" required>
+          </div>
+          <div class="input-box">
+            <label for="bairro" class="title-label">Bairro</label>
+            <input type="text" id="bairro" class="input" required>
+          </div>
+          <div class="input-box">
+              <label for="cidade" class="title-label">Cidade</label>
+              <input type="text" id="cidade" class="input" required>
+          </div>
+          <div class="input-box">
+              <label for="estado" class="title-label">Estado</label>
+              <input type="text" id="estado" class="input" required>
+          </div>
+        </div>  
+        <button type="submit" class="save-button">
+            Salvar
+        </button>
+      </form>
+  </div>
+</body>
+  <script src="./js/main.js"></script>
+</html>
